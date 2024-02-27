@@ -64,6 +64,7 @@ class ShoeItems extends StatelessWidget {
                             color: Color.fromARGB(255, 29, 35, 46),
                             borderRadius: BorderRadius.circular(20),
                             image: DecorationImage(
+                              fit: BoxFit.cover,
                                 image: NetworkImage(product.image!, scale: 7))),
                         child: Stack(
                           children: [
