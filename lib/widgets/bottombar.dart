@@ -1,7 +1,7 @@
 import 'package:firebase_login/controller/bottombar_provider.dart';
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/views/home.dart';
-import 'package:firebase_login/views/profile.dart';
+import 'package:firebase_login/views/settings/settings.dart';
 import 'package:firebase_login/views/storagepage.dart';
 import 'package:firebase_login/views/wishlist.dart';
 import 'package:flutter/material.dart';
@@ -21,8 +21,8 @@ class _MyWidgetState extends State<BottomNavigation> {
     final List<Widget> _pages = [
     HomePage(),
     StorePage(),
-    CartPage(),
-    Profile(),
+    WishlistPage(),
+    Settings(),
   ];
 
   @override
@@ -51,9 +51,9 @@ class _MyWidgetState extends State<BottomNavigation> {
               
             ),
             NavigationDestination(
-              icon: Icon(Iconsax.shopping_cart,
+              icon: Icon(Iconsax.lovely,
                   color:  bottomProvider.currentIndex == 2 ? Colors.white : const Color.fromARGB(255, 106, 105, 105)),
-              label: 'Cart',
+              label: 'WishList',
             ),
             NavigationDestination(
               icon: Icon(Iconsax.user,

@@ -158,7 +158,7 @@ class DetailsPage extends StatelessWidget {
                           color: Colors.amber,
                         ),
                         child: Center(
-                          child: Text('Buy Now',style: GoogleFonts.montserrat(
+                          child: Text('Add to Wishlist',style: GoogleFonts.montserrat(
                             color: Colors.white,
                             fontSize: 18,
                             fontWeight: FontWeight.w500)),

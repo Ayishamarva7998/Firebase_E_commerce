@@ -8,10 +8,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:provider/provider.dart';
 
-class CartPage extends StatelessWidget {
+class WishlistPage extends StatelessWidget {
   final ProductModel? product;
 
-  CartPage({this.product});
+  WishlistPage({this.product});
   AuthService auth = AuthService();
   @override
   Widget build(BuildContext context) {
