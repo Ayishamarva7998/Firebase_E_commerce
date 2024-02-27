@@ -16,10 +16,12 @@ class OtpScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return AlertDialog(
       backgroundColor: Color.fromARGB(255, 24, 30, 41),
-      content: Lottie.asset(
-        'assets/Animation - 1703265851950.json',
-        height: 150,
-      ),
+    
+      
+      // content: Lottie.asset(
+      //   'assets/Animation - 1703265851950.json',
+      //   height: 150,
+      // ),
       actions: [
         CustomTextField(
           controller: otpcontroller,

@@ -64,10 +64,14 @@ class FurnitureItems extends StatelessWidget {
                             ],
                             color: Color.fromARGB(255, 29, 35, 46),
                             borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
+                            image: DecorationImage(fit: BoxFit.cover,
                                 image: NetworkImage(product.image!, scale: 7))),
                         child: Stack(
                           children: [
+                        // IconButton(onPressed: (){
+                        //   Provider.of<Wishlist>(context,listen: false).addProductToWishlist(product, product.id.toString());
+                        // }, icon: Icon(Icons.badge
+                        // )),
                             Positioned(
                                 left: 10,
                                 top: 10,
@@ -106,7 +110,7 @@ class FurnitureItems extends StatelessWidget {
                                   Text(
                                     '${product.price}',
                                     style: GoogleFonts.montserrat(
-                                        color: Color.fromARGB(255, 38, 184, 43),
+                                        color: Color.fromARGB(255, 9, 28, 10),
                                         fontSize: 16),
                                   ),
                                 ],

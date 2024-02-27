@@ -1,4 +1,5 @@
 import 'package:firebase_login/controller/bottombar_provider.dart';
+import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/views/home.dart';
 import 'package:firebase_login/views/profile.dart';
 import 'package:firebase_login/views/storagepage.dart';

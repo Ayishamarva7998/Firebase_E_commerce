@@ -27,13 +27,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<String> images = [
-    'assets/4021475.jpg',
-    'assets/5565175.jpg',
-    'assets/add.1.jpg',
-    'assets/add.2.jpg',
-    'assets/add.3.jpg',
-    'assets/add.4.jpg',
-    'assets/add.5.jpg',
+    'assets/offers.jpg',
+    'assets/offer2.jpg',
+    'assets/shoeoffers.jpg',
+    'assets/chocolates.jpg',
+    'assets/lipsticks.jpg',
+    'assets/plants.jpg',
+    'assets/bags.jpg',
   ];
 
   @override
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                               fontWeight: FontWeight.w500,
                               color: Colors.white)),
                       Image.asset(
-                        'assets/handwave.png',
+                        'assets/handwave.jpg',
                         height: 20,
                       ),
                       spacingWidth(10),

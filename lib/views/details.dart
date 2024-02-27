@@ -1,13 +1,17 @@
+import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/model/product_model.dart';
+import 'package:firebase_login/services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:provider/provider.dart';
 
 
 class DetailsPage extends StatelessWidget {
   final ProductModel product;
   DetailsPage({Key? key, required this.product}) : super(key: key);
+  AuthService auth = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -142,18 +146,23 @@ class DetailsPage extends StatelessWidget {
                         Icon(Icons.arrow_right_outlined,color: Colors.green,)
                       ],
                     ),
-                    Container(
-                      height: 60,
-                      width: 170,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
-                        color: Colors.amber,
-                      ),
-                      child: Center(
-                        child: Text('Buy Now',style: GoogleFonts.montserrat(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500)),
+                    GestureDetector(onTap: () {
+                      print('object');
+                      Provider.of<Wishlist>(context,listen: false).addProductToWishlist(product,auth.auth.currentUser!.uid );
+                    },
+                      child: Container(
+                        height: 60,
+                        width: 170,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Colors.amber,
+                        ),
+                        child: Center(
+                          child: Text('Buy Now',style: GoogleFonts.montserrat(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500)),
+                        ),
                       ),
                     ),
                     

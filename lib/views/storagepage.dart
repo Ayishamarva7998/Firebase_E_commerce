@@ -49,7 +49,7 @@ class StorePage extends StatelessWidget {
             ),
           ),
           
-          ShoeItems(),
+          // ShoeItems(),
         ],
       ),
     );
