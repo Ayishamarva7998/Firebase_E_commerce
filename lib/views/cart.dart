@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, avoid_print, unnecessary_string_interpolations
+
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/model/product_model.dart';
@@ -11,7 +13,7 @@ import 'package:provider/provider.dart';
 class CartPage extends StatelessWidget {
   final ProductModel? product;
 
-  CartPage({this.product});
+  CartPage({super.key, this.product});
   AuthService auth = AuthService();
 
   Future<void> _showDeleteConfirmationDialog(BuildContext context, ProductModel data) async {

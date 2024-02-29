@@ -1,9 +1,10 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:firebase_login/services/auth_service.dart';
 import 'package:firebase_login/views/home.dart';
 import 'package:firebase_login/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
 
 
 class OtpScreen extends StatelessWidget {
@@ -15,7 +16,7 @@ class OtpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return AlertDialog(
-      backgroundColor: Color.fromARGB(255, 24, 30, 41),
+      backgroundColor: const Color.fromARGB(255, 24, 30, 41),
     
       
       // content: Lottie.asset(

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:firebase_login/helpers/custom_container.dart';
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/services/auth_service.dart';

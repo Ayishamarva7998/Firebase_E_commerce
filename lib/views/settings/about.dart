@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 
@@ -33,19 +35,18 @@ class About extends StatelessWidget {
                   height: 30,
                 ),
                 const Text(''' 
-              Welcome to the Easy Tracker! 
+              Welcome to the E-commerce! 
 
-              Easy Tracker makes life easier!
+              E-commerce makes life easier!
 
-  A Easy Tracker app  designed to help individuals to monitor and manage their financial transactions.
-  These transactions can include everything from daily purchases and bills to larger expenses like rent and investments.
-  The primary goal of an expense tracker is to provide users with a comprehensive overview of their spending 
-  patterns,enabling them to make informed decisions about their finances.
+Welcome to a world where shopping knows no bounds  E-commerce!
+ Unleash the power of convenience and choice as you embark on a seamless online shopping experience.
+  We bring you an unparalleled selection of products, curated to cater to your diverse needs and desires.
 .
 
              
 
-              Is Easy Pay a safe app:-
+              Is E-commerce a safe app:-
 
 Easy Tracker does not handle any cash transactions,nor does it link to personal banking details,making it safer than other Apps. 
 

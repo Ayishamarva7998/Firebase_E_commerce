@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, must_be_immutable
+
 import 'package:firebase_login/controller/category_provider.dart';
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/model/product_model.dart';

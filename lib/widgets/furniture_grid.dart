@@ -24,7 +24,7 @@ class FurnitureItems extends StatelessWidget {
       builder: (context, snapshot) {
         final data = snapshot.data;
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return SliverFillRemaining(
+          return const SliverFillRemaining(
             child: ShimmerLoader(),
           );
         } else if (snapshot.hasError) {
@@ -32,16 +32,16 @@ class FurnitureItems extends StatelessWidget {
           return SliverFillRemaining(
             child: Text(
               snapshot.error.toString(),
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
           );
         } else if (snapshot.data == null) {
-          return SliverFillRemaining(
+          return const SliverFillRemaining(
             child: CircularProgressIndicator(),
           );
         } else {
           return SliverGrid(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               crossAxisSpacing: 8.0,
               mainAxisSpacing: 8.0,
@@ -58,11 +58,11 @@ class FurnitureItems extends StatelessWidget {
                         decoration: BoxDecoration(
                             boxShadow: [
                               BoxShadow(
-                                  offset: Offset(3, 4),
+                                  offset: const Offset(3, 4),
                                   blurRadius: 2.5,
                                   color: Colors.black.withOpacity(0.2)),
                             ],
-                            color: Color.fromARGB(255, 29, 35, 46),
+                            color: const Color.fromARGB(255, 29, 35, 46),
                             borderRadius: BorderRadius.circular(20),
                             image: DecorationImage(fit: BoxFit.cover,
                                 image: NetworkImage(product.image!, scale: 7))),
@@ -87,7 +87,7 @@ class FurnitureItems extends StatelessWidget {
                                   child: Container(
                                     height: 20,
                                     width: 20,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       image: DecorationImage(
                                         fit: BoxFit.cover,
                                         image: AssetImage('assets/add-to-favorites.png'))
@@ -105,12 +105,12 @@ class FurnitureItems extends StatelessWidget {
                                 children: [
                                   Text(
                                     product.title ?? 'No title',
-                                    style: TextStyle(color: Colors.white),
+                                    style: const TextStyle(color: Colors.white),
                                   ),
                                   Text(
                                     '${product.price}',
                                     style: GoogleFonts.montserrat(
-                                        color: Color.fromARGB(255, 9, 28, 10),
+                                        color: const Color.fromARGB(255, 9, 28, 10),
                                         fontSize: 16),
                                   ),
                                 ],
@@ -124,7 +124,7 @@ class FurnitureItems extends StatelessWidget {
                                   backgroundColor: Colors.white.withOpacity(0.1),
                                   child: InkWell(
                                       onTap: () {},
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.arrow_forward_ios,
                                         size: 13,
                                         color: Colors.white,

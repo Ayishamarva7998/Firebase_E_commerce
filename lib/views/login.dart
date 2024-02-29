@@ -1,4 +1,7 @@
 
+
+// ignore_for_file: must_be_immutable, avoid_unnecessary_containers
+
 import 'package:firebase_login/helpers/custom_container.dart';
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/services/auth_service.dart';
@@ -8,7 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
 
 
-// ignore: must_be_immutable
+
 class LoginPage extends StatefulWidget {
   VoidCallback showRegisterPage;
    LoginPage({super.key,required this.showRegisterPage});
@@ -33,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
     var width=MediaQuery.of(context).size.width;
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color.fromARGB(255, 24, 30, 41),
+      backgroundColor: const Color.fromARGB(255, 24, 30, 41),
       body: Stack(
         children: [
           ClipPath(
@@ -41,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Container(
               height: height*1.5,
               width: double.infinity,
-              color: Color.fromARGB(255, 33, 41, 56)
+              color: const Color.fromARGB(255, 33, 41, 56)
             ),
           ),
           Padding(
@@ -132,10 +135,11 @@ class _LoginPageState extends State<LoginPage> {
                             color: Colors.white.withOpacity(0.4),
                             borderRadius: BorderRadius.circular(20)
                           ),
+                          // ignore: prefer_const_constructors
                           child: Icon(Iconsax.mobile,color: Colors.white,size: 35,),
                         ),
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=>PhoneAuthPage()));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const PhoneAuthPage()));
                         },
                       ),
                     ],

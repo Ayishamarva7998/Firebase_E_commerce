@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:firebase_login/controller/homepage_provider.dart';
 import 'package:firebase_login/helpers/helpers.dart';
@@ -57,8 +59,7 @@ class _HomePageState extends State<HomePage> {
                           style: GoogleFonts.montserrat(
                               fontSize: 17,
                               fontWeight: FontWeight.w500,
-                              color: Colors.white)),
-                      Image.asset(
+                              color: Colors.white)),                      Image.asset(
                         'assets/handwave.jpg',
                         height: 20,
                       ),

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_string_interpolations, avoid_print, must_be_immutable
+
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/model/product_model.dart';

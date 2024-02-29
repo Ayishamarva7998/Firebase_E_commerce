@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors_in_immutables
+
 import 'package:firebase_login/views/login.dart';
 import 'package:firebase_login/views/signup.dart';
 import 'package:flutter/material.dart';
