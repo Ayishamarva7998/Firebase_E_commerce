@@ -37,5 +37,5 @@ class DatabaseService2 {
               CategoryModel.fromJson(snapshot.data()!),
           toFirestore: (data, setOptions) => data.toJson(),
         );
-  }
+  } 
 }

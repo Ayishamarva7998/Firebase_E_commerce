@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
+
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/services/auth_service.dart';
 import 'package:firebase_login/views/settings/about.dart';

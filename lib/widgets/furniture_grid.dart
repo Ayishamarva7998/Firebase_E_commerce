@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:firebase_login/controller/homepage_provider.dart';
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/model/product_model.dart';

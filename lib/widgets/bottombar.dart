@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, override_on_non_overriding_member
+
 import 'package:firebase_login/controller/bottombar_provider.dart';
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/views/home.dart';

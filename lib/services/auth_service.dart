@@ -50,7 +50,7 @@ class AuthService {
     }
   }
 
-  singinWithGoogle() async {
+  singinWithGoogle() async {     
     try {
       final GoogleSignInAccount? guser = await GoogleSignIn().signIn();
       final GoogleSignInAuthentication gauth = await guser!.authentication;

@@ -6,9 +6,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
 
 
-class drawerPage extends StatelessWidget {
+class DrawerPage extends StatelessWidget {
   AuthService auth = AuthService();
-   drawerPage({super.key});
+   DrawerPage({super.key});
   
   @override
   Widget build(BuildContext context) {

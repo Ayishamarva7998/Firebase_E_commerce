@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, unnecessary_string_interpolations, avoid_print
+
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/model/product_model.dart';
@@ -11,7 +13,7 @@ import 'package:provider/provider.dart';
 class WishlistPage extends StatelessWidget {
   final ProductModel? product;
 
-  WishlistPage({this.product});
+  WishlistPage({super.key, this.product});
   AuthService auth = AuthService();
   @override
   Widget build(BuildContext context) {

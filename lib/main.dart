@@ -5,7 +5,7 @@ import 'package:firebase_login/controller/category_provider.dart';
 import 'package:firebase_login/controller/homepage_provider.dart';
 import 'package:firebase_login/controller/wishlist_provider.dart';
 import 'package:firebase_login/firebase_options.dart';
-import 'package:firebase_login/views/first_screen.dart';
+
 import 'package:firebase_login/views/main_page.dart';
 import 'package:flutter/material.dart';
 

@@ -1,5 +1,7 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:firebase_login/widgets/furniture_grid.dart';
-import 'package:firebase_login/widgets/shoe_grid.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

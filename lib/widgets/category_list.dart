@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, avoid_print
+
 import 'package:firebase_login/controller/homepage_provider.dart';
 import 'package:firebase_login/model/category_model.dart';
 import 'package:firebase_login/services/auth_service.dart';

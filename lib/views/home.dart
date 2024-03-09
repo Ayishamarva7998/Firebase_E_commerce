@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 24, 30, 41),
       ),
-      endDrawer: drawerPage(),
+      endDrawer: DrawerPage(),
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(

@@ -5,6 +5,7 @@ import 'package:firebase_login/views/home.dart';
 import 'package:firebase_login/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 
 
 class OtpScreen extends StatelessWidget {
@@ -19,10 +20,10 @@ class OtpScreen extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 24, 30, 41),
     
       
-      // content: Lottie.asset(
-      //   'assets/Animation - 1703265851950.json',
-      //   height: 150,
-      // ),
+      content: Lottie.asset(
+        'assets/Animation - 1703263987973 (1).json',
+        height: 150,
+      ),
       actions: [
         CustomTextField(
           controller: otpcontroller,

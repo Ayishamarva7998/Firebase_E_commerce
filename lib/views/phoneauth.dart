@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:country_picker/country_picker.dart';
 import 'package:firebase_login/helpers/helpers.dart';
 import 'package:firebase_login/services/auth_service.dart';

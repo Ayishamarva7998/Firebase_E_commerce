@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print, use_rethrow_when_possible
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_login/model/product_model.dart';
 import 'package:firebase_login/services/firebase_service.dart';

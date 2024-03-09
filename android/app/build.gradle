@@ -18,11 +18,11 @@ if (flutterVersionCode == null) {
 }
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
-if (flutterVersionName == null) {
+if (flutterVersionName == null) { 
     flutterVersionName = '1.0'
 }
 
-android {
+android { 
     namespace "com.example.firebase_auth"
     compileSdkVersion 34
     ndkVersion flutter.ndkVersion
