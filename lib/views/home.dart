@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
     'assets/offers.jpg',
     'assets/offer2.jpg',
     'assets/shoeoffers.jpg',
-    'assets/chocolates.jpg',
+    'assets/headsets.jpeg ',
     'assets/lipsticks.jpg',
     'assets/plants.jpg',
     'assets/bags.jpg',

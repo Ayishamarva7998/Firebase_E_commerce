@@ -32,7 +32,7 @@ class CategoryItems extends StatelessWidget {
     switch (category.id) {
       case "1":
         return FutureBuilder<List<ProductModel>>(
-          future: catPro.getCategoryItems(type: 'creams', typeofcategory: 'creamcategory'),
+          future: catPro.getCategoryItems(type: 'cream', typeofcategory: 'creamcategory'),
           builder: (context, snapshot) {
             return buildContent(snapshot, catPro);
           },
@@ -53,7 +53,7 @@ class CategoryItems extends StatelessWidget {
         );
       case "4":
         return FutureBuilder<List<ProductModel>>(
-          future: catPro.getCategoryItems(type: 'jzczwVUcDfm3TqqzeQpJ', typeofcategory: 'shirtcategory'),
+          future: catPro.getCategoryItems(type: 'makeup', typeofcategory: 'makeupcategory'),
           builder: (context, snapshot) {
             return buildContent(snapshot, catPro);
           },

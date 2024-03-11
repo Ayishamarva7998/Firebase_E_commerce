@@ -122,7 +122,7 @@ class AuthService {
   }
 
    signInWithGithub(context) async {
-    GithubAuthProvider githubAuthProvider = GithubAuthProvider();
+    GithubAuthProvider githubAuthProvider = GithubAuthProvider(); 
     try {
       UserCredential user = await auth.signInWithProvider(githubAuthProvider);
       User gituser = user.user!;
